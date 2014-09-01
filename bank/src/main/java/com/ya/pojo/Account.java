@@ -39,7 +39,7 @@ public class Account
     @ManyToOne
     @JoinColumn(name = "user_id",insertable = false,updatable = false)
     private User user;
-
+    
     public Set<Transaction> getTransacts() {
         return transacts;
     }
